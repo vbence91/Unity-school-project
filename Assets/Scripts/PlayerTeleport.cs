@@ -28,7 +28,7 @@ public class PlayerTeleport : MonoBehaviour
     {
         if (collision.CompareTag("Teleporter"))
         {
-            if(collision.gameObject == currentTeleporter)
+            if (collision.gameObject == currentTeleporter)
             {
                 currentTeleporter = null;
             }
