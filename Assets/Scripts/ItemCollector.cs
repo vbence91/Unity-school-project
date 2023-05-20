@@ -12,7 +12,7 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioSource itemCollectSoundEffect;
     private void Start()
     {
-        if(SceneManager.GetActiveScene().buildIndex > 0)
+        if(SceneManager.GetActiveScene().buildIndex == 2) // coins on scene no.2 only
         {
             totalCoins = TotalCoins();
             coinText.text = "Soul coins: " + coins + "/" + totalCoins;

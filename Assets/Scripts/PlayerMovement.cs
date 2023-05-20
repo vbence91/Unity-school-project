@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-    private BoxCollider2D collider;
+    private BoxCollider2D col;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
 
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        collider = GetComponent<BoxCollider2D>();
+        col = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -81,6 +81,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(collider.bounds.center, collider.bounds.size, 0f, Vector2.down, .1f, jumpableGround); // another box to check if this box overlaps with a surface
+        return Physics2D.BoxCast(col.bounds.center, col.bounds.size, 0f, Vector2.down, .1f, jumpableGround); // another box to check if this box overlaps with a surface
     }
 }

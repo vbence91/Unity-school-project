@@ -9,6 +9,7 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private AudioSource deathSoundEffect;
+    private bool dead = false;
 
     private void Start()
     {
@@ -18,9 +19,14 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
         {
-            Die();
+            if (!dead)
+            {
+                dead = true;
+                Die();
+            }
+            
         }
     }
 
