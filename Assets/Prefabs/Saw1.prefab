@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 15859670590986456}
   - component: {fileID: 15859670590986459}
   m_Layer: 0
-  m_Name: Saw
+  m_Name: Saw1
   m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
