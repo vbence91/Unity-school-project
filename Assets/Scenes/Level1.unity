@@ -3007,7 +3007,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c044d900bf194934f944ec5a1dcd90b6, type: 2}
+  - {fileID: 2100000, guid: 524f7d0bcb5014b43b78d85a759b0904, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118943,6 +118943,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 85598909}
+    - target: {fileID: 7761360673014942546, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
+      propertyPath: LaunchOffset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761360673014942546, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
+      propertyPath: projectileBehaviour
+      value: 
+      objectReference: {fileID: 285811253466716752, guid: 29df3f3c4cb0b1946be8a2a98594d41b, type: 3}
     - target: {fileID: 7761360673014942548, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: MinDistance
       value: 6.6824474
@@ -118961,11 +118969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7761360673014942556, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.5
+      value: -9.44
       objectReference: {fileID: 0}
     - target: {fileID: 7761360673014942556, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.6
+      value: 11.74
       objectReference: {fileID: 0}
     - target: {fileID: 7761360673014942556, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: m_LocalPosition.z
