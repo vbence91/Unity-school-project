@@ -760,7 +760,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 169c738601686406e9dc499aecfe1539, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101748,7 +101748,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d9e280ca0b9d3ad4f83da6d4defd2c91, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.385
+  m_Volume: 0.267
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -102739,6 +102739,14 @@ PrefabInstance:
     - target: {fileID: 7761360673014942544, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: coinText
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761360673014942550, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
+      propertyPath: m_Volume
+      value: 0.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761360673014942551, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
+      propertyPath: m_Volume
+      value: 0.554
       objectReference: {fileID: 0}
     - target: {fileID: 7761360673014942553, guid: 13b232d9855eee14fa0e9f2487ff8019, type: 3}
       propertyPath: m_Name
