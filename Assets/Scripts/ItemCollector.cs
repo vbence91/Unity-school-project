@@ -15,6 +15,7 @@ public class ItemCollector : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 2) // coins on scene no.2 only
         {
             totalCoins = TotalCoins();
+            PlayerPrefs.SetInt("totalCoins", totalCoins);
             coinText.text = "Soul coins: " + coins + "/" + totalCoins;
         }
     }
@@ -27,6 +28,7 @@ public class ItemCollector : MonoBehaviour
             coins++;
             //Debug.Log($"Coins: {coins}");
             coinText.text = "Soul coins: " + coins + "/" + totalCoins;
+            PlayerPrefs.SetInt("coins", coins);
         }
     }
 

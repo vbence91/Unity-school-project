@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -9,12 +10,20 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private AudioSource deathSoundEffect;
+
+    [SerializeField] private Text dc;
+    private static int death;
+
     private bool dead = false;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            dc.text = "Death counter: " + death;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,6 +33,11 @@ public class PlayerLife : MonoBehaviour
             if (!dead)
             {
                 dead = true;
+                death++;
+                dc.text = "";
+                dc.text = "Death counter: " + death;
+                PlayerPrefs.SetInt("coins", 0);
+                PlayerPrefs.SetInt("death", death);
                 Die();
             }
             
